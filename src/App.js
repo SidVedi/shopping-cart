@@ -22,7 +22,9 @@ function App() {
     },
       ]
     },
-  ]);
+  ], {
+    basename: import.meta.env.BASE_URL,
+  });
   return (
     <Provider store={appStore}>
       <RouterProvider router={appRouter} />
