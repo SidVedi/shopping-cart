@@ -14,6 +14,7 @@ const transformJsxInJs = () => ({
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), transformJsxInJs(), tailwindcss()],
+  base: '/shopping-cart/',
   server: {
     port: 3000,
   },
